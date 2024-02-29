@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(131, 216, 218);
+    --secondary-color: rgb(46, 152, 240);
+    --abaixo_do_peso: rgb(255, 124, 124);
+    --peso_normal: rgb(124, 255, 130);
+    --sobrepeso: rgb(229, 245, 82);
+    --grau_um: rgb(250, 142, 42);
+    --grau_dois: rgb(255, 124, 124);
+    --grau_tres: rgb(255, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+}
+
+.container {
+    max-width: 640px;
+    margin: 3rem auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.main-div .form-result {
+    margin: 0 1rem;
+}
+
+.main-div form * {
+    width: 100%;
+    display: block;
+
+}
+
+.main-div form input {
+    margin-bottom: 1rem;
+    height: 40px;
+}
+
+.main-div form input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.main-div form button {
+    border-radius: 0.25rem;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.main-div form button:hover {
+    background: var(--primary-color);
+    transition: 0.25s;
+
+}
+
+.titulo-principal {
+    margin: 0 auto;
+    font-size: 60px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.container .tabela {
+    display: flex;
+    margin: auto;
+    position: relative;
+    margin-top: 1rem;
+
+}
+
+.container .tabela .resultado {
+    width: 100%;
+}
+
+.container .tabela .imc {
+    width: 100%;
+}
+
+
+.form-result {
+    background-color: blue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.abaixo_do_peso {
+    background-color: var(--abaixo_do_peso);
+    margin: 0;
+    padding: 0.5rem;
+}
+.peso_normal {
+    background-color: var(--peso_normal);
+    margin: 0;
+    padding: 0.5rem;
+}
+.sobrepeso {
+    background-color: var(--sobrepeso);
+    margin: 0;
+    padding: 0.5rem;
+}
+.grau_um {
+    background-color: var(--grau_um);
+    margin: 0;
+    padding: 0.5rem;
+}
+.grau_dois {
+    background-color: var(--grau_dois);
+    margin: 0;
+    padding: 0.5rem;
+}
+.grau_tres {
+    background-color: var(--grau_tres);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.invalid_number {
+    background-color: red;
+    margin: 0;
+    padding: 0.5rem;
+}
